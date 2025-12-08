@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LED Trap</title>
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
-  <script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-  <button id="connectBtn">Connect</button>
 
   <h1>LED Trap</h1>
+
+  <button id="connectBtn">Connect to Arduino</button>
+
   <div class="stats">
-    <h2>Level: <span id="level">1</span></h2>
-    <h2>Time Left: <span id="timer">20</span>s</h2>
-    <h2>Score: <span id="score">0</span></h2>
-    <h2>Blue Speed: <span id="speed">2000ms</span></h2>
+    <p>Level: <span id="level">1</span></p>
+    <p>Time: <span id="timer">0.0</span>s</p>
   </div>
+
+  <button id="startBtn">Start Game</button>
 
   <script src="index.js"></script>
 </body>
-
 </html>
